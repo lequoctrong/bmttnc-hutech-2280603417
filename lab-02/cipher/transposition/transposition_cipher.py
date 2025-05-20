@@ -24,3 +24,5 @@ class TranspositionCipher:
                 row += 1
 
         return ''.join(decrypted_text)     # Ghép các ký tự lại thành chuỗi kết quả
+    # Đây là bản cập nhật hoán vị
+
