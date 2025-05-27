@@ -7,9 +7,7 @@
 <body>
     <div class="container">
         <table class="table">
-            <tr>
-                <td style="text-align: center; font-weight: bold; font-size: 25px;">CAESAR CIPHER</td>
-            </tr>
+            <tr><td style="text-align: center; font-weight: bold; font-size: 25px;">CAESAR CIPHER</td></tr>
             <tr>
                 <td style="font-weight: bold; color: blue">ENCRYPTION</td>
             </tr>
@@ -18,11 +16,11 @@
                     <form method="POST" action="/encrypt">
                         <div class="mb-3">
                             <label class="form-label">Plain text:</label>
-                            <input type="text" class="form-control" name="inputPlainText" placeholder="Input Plain Text" required autofocus/>
+                            <input type="text" class="form-control" name="inputPlainText" placeholder="Input Plain Text" required autofocus>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Key:</label>
-                            <input type="number" class="form-control" name="inputKeyPlain" placeholder="Input Key" required/>
+                            <input type="number" class="form-control" name="inputKeyPlain" placeholder="Input Key" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Encrypt</button>
                     </form>
@@ -34,27 +32,18 @@
             <tr>
                 <td>
                     <form method="POST" action="/decrypt">
-                        <div class="mb-3">
-                            <label class="form-label">Cipher text:</label>
-                            <input type="text" class="form-control" name="inputCipherText" placeholder="Input Cipher Text" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Key:</label>
-                            <input type="number" class="form-control" name="inputKeyCipher" placeholder="Input Key" required/>
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Cipher text:</label>
+                        <input type="text" class="form-control" name="inputCipherText" placeholder="Input Cipher Text" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Key:</label>
+                        <input type="number" class="form-control" name="inputKeyCipher" placeholder="Input Key" required>
+                    </div>
                         <button type="submit" class="btn btn-success">Decrypt</button>
                     </form>
                 </td>
             </tr>
-            {% if result %}
-            <tr>
-                <td>
-                    <div class="alert alert-info">
-                        {{ result | safe }}
-                    </div>
-                </td>
-            </tr>
-            {% endif %}
         </table>
     </div>
 </body>
