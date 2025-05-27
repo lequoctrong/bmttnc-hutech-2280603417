@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 
 # Import từ các module con (dùng import tuyệt đối)
-from cipher.vigenere.vigenere_cipher import VigenereCipher
+from cipher.vigenere import VigenereCipher
 from cipher.caesar.caesar_cipher import CaesarCipher
 from cipher.railfence import RailFenceCipher
 from cipher.playfair import PlayFairCipher
