@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "lab-03",
+			"path": "."
+		},
+		{
+			"name": "lab-02",
+			"path": "../lab-02"
+		}
+	],
+	"settings": {}
+}
